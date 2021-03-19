@@ -6,9 +6,11 @@
 
 body {
     display: grid;
-    grid-template-rows: 50px 174px 100px auto 50px ;
+    grid-template-rows: 50px 174px 100px auto 50px;
     grid-template-columns: 1fr 1fr 1fr;
-    background-color: orchid;
+    background-color: navajowhite;
+    gap: 16px;
+    margin: 10px;
     grid-template-areas:
     "header vierkantC vierkantC"
     "text vierkantC vierkantC"
@@ -18,56 +20,65 @@ body {
 
 }
 
-header, #text, #vierkantC, #vierkantD, #vierkantE , footer {
-    border-style: dashed;
-    border-color: darkslategray;
+header, #text, #vierkantC, #vierkantD, #vierkantE, footer {
+    border-style: solid;
+    border-color: black;
+    color: white;
+
 }
 
 
 header {
-    background-color: greenyellow;
+    background-color: indianred;
     grid-area: header;
+    text-align: center;
 }
 
 #text {
-    background-color: blue;
+    background-color: indianred;
     grid-area: text;
 }
+
 #vierkantC {
-    background-color: blueviolet;
+    background-color: indianred;
     grid-area: vierkantC;
+    text-align: center;
 }
 
 #vierkantD {
-    background-color: red;
+    background-color: indianred;
     grid-area: vierkantD;
-}
-#vierkantE{
-    background-color: mediumspringgreen;
-    grid-area: vierkantE;
-}
-footer {
-    background-color: gold;
-    grid-area: footer;
+    text-align: center;
 }
 
-@media screen and (max-width: 576px){
-    body{
+#vierkantE {
+    background-color: indianred;
+    grid-area: vierkantE;
+    text-align: center;
+}
+
+footer {
+    background-color: indianred;
+    grid-area: footer;
+    text-align: center;
+}
+
+@media screen and (max-width: 576px) {
+    body {
+        display: grid;
         grid-template-rows:50px auto 50px 50px 50px 50px 50px;
-        grid-template-columns: 1fr ;
-        background-color: orchid;
+        grid-template-columns: 1fr;
+        background-color: navajowhite;
         grid-template-areas:
         "header"
-        ""
+        "text"
+        "vierkantC"
+        "vierkantD"
+        "vierkantE"
+        "."
+        "footer"
 
     }
-
-
-
-
-
-
-
 
 
 }
