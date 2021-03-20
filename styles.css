@@ -21,17 +21,18 @@ body {
 }
 
 header, #text, #vierkantC, #vierkantD, #vierkantE, footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-style: solid;
     border-color: black;
     color: white;
-
 }
 
 
 header {
     background-color: indianred;
     grid-area: header;
-    text-align: center;
 }
 
 #text {
@@ -42,25 +43,21 @@ header {
 #vierkantC {
     background-color: indianred;
     grid-area: vierkantC;
-    text-align: center;
 }
 
 #vierkantD {
     background-color: indianred;
     grid-area: vierkantD;
-    text-align: center;
 }
 
 #vierkantE {
     background-color: indianred;
     grid-area: vierkantE;
-    text-align: center;
 }
 
 footer {
     background-color: indianred;
     grid-area: footer;
-    text-align: center;
 }
 
 @media screen and (max-width: 576px) {
@@ -76,9 +73,6 @@ footer {
         "vierkantD"
         "vierkantE"
         "."
-        "footer"
-
+        "footer";
     }
-
-
 }
